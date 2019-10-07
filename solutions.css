@@ -1,0 +1,196 @@
+.ex-1-square,
+.ex-2-square,
+.ex-3-square,
+.ex-4-square,
+.ex-5-square,
+.ex-7-img,
+.ex-8-img,
+.ex-9-img
+{
+ transition: all 2s ease 0s;
+}
+
+.ex-1-square:hover{
+ background: red;
+}
+
+.ex-2-square:active{
+ width: 100%;
+}
+
+.ex-3-square:hover{
+ border-radius: 100%;
+}
+
+.ex-4-square:hover{
+ opacity: 0;
+}
+
+.ex-5-square:hover{
+ transform: scale(2);
+}
+
+.ex-5-square:active{
+ transform: scale(0.5);
+}
+
+.ex-6-img:hover{
+ filter: grayscale(1);
+}
+
+.ex-7-img:hover{
+ filter: sepia(0.5) grayscale(0.5);
+}
+
+.ex-8-img:hover{
+ border-radius: 30px;
+ filter: sepia(0.5) grayscale(0.5);
+}
+
+.ex-9-img:hover{
+ border-radius: 30px;
+ filter: sepia(0.5) grayscale(0.5);
+ transform: scale(1.5);
+}
+
+.ex-10-icon{
+ animation: rotate 1s infinite linear;
+}
+
+@keyframes rotate {
+ 0% {
+  transform: rotate(-0deg);
+ }
+ 50% {
+  transform: rotate(-180deg);
+ }
+ 100% {
+  transform: rotate(-360deg);
+ }
+}
+
+
+.ex-11-icon:hover{
+ animation: first 2s linear;
+}
+
+@keyframes first {
+ 0% {
+  transform: rotate(0deg);
+ }
+ 50% {
+  transform: rotate(180deg);
+ }
+ 90% {
+  transform: rotate(310deg);
+ }
+ 100%{
+  transform: rotate(0deg);
+ }
+}
+
+.ex-12-button:hover .ex-12-top-white{
+ animation: white-space 2s linear;
+}
+
+.ex-12-button:hover .ex-12-bottom-white{
+ animation: white-space-bottom 2s linear;
+}
+
+@keyframes white-space {
+ 0% {
+  transform: translate(0px,0px);
+ }
+ 50%{
+  transform: translate(90px,0px);
+ }
+ 100%{
+  transform: translate(0px,0px);
+ }
+}
+
+@keyframes white-space-bottom {
+ 0% {
+  transform: translate(0px,0px);
+ }
+ 50%{
+  transform: translate(-90px,0px);
+ }
+ 100%{
+  transform: translate(0px,0px);
+ }
+}
+
+.ex-13-button:hover .ex-13-top-white{
+ animation: white-space-first 4s linear;
+}
+
+.ex-13-button:hover .ex-13-bottom-white{
+ animation: white-space-second 4s linear;
+}
+
+@keyframes white-space-first {
+
+ 0% {
+  left: 10%;
+  top: -10px;
+ }
+
+ 30% {
+ left: 90%;
+ top: -10px;
+ }
+
+ 45% {
+  left: 90%;
+  top: 80%;
+ }
+
+ 75% {
+  left: -15px;
+  top: 100%;
+ }
+
+ 90% {
+  left: -15px;
+  top: -10px;
+ }
+
+ 100% {
+  left: 10%;
+  top: -10px;
+ }
+
+}
+
+@keyframes white-space-second {
+ 0% {
+  right: 20%;
+  bottom: -10px;
+ }
+
+ 30% {
+ right: 80%;
+ bottom: -10px;
+ }
+
+ 45% {
+  right: 80%;
+  bottom: 53px;
+ }
+
+ 75% {
+  right: -15px;
+  bottom: 53px;
+ }
+
+ 90% {
+  right: -15px;
+  bottom: -10px;
+ }
+
+ 100% {
+  right: 20%;
+  bottom: -10px;
+ }
+}
